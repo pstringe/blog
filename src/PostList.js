@@ -1,7 +1,4 @@
-const PostList = (props) => {
-    const heading = props.heading;
-    const posts = props.posts;
-
+const PostList = ({heading, posts}) => {
     return ( 
         <div className='post-list'>
         <h2>{heading}</h2>
