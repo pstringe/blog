@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import PostList from './PostList';
 
 const Home = () => {
     const [posts, setPosts] = useState([
@@ -10,19 +11,7 @@ const Home = () => {
     return ( 
         <div className='home'>
             <h1>Home</h1>
-            {posts.map(post => {
-                return (
-                <div className='post' key={post.id}>
-                    <h2>{post.title}</h2>
-                    <div className='author'>
-                        <p>{post.author}</p>
-                    </div>
-                    <div className='body'>
-                        <p>{post.body}</p>
-                    </div>
-                </div>
-                );
-            })}
+            <PostList posts={posts} />
         </div>
     );
 }
