@@ -1,4 +1,4 @@
-const PostList = ({heading, posts}) => {
+const PostList = ({heading, posts, handelClick}) => {
     return ( 
         <div className='post-list'>
         <h2>{heading}</h2>
@@ -11,6 +11,9 @@ const PostList = ({heading, posts}) => {
                 </div>
                 <div className='post-preview-body'>
                     <p>{post.body}</p>
+                </div>
+                <div className='remove'>
+                    <button onClick={()=> handelClick(post.id)}>Remove</button>
                 </div>
             </div>
             );
