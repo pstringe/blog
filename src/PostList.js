@@ -1,8 +1,11 @@
 const PostList = (props) => {
+    const heading = props.heading;
+    const posts = props.posts;
+
     return ( 
         <div className='post-list'>
-        <h1>Post List</h1>
-        {props.posts.map(post => {
+        <h2>{heading}</h2>
+        {posts.map(post => {
             return (
             <div className='post-preview' key={post.id}>
                 <h2>{post.title}</h2>

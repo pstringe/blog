@@ -11,7 +11,7 @@ const Home = () => {
     return ( 
         <div className='home'>
             <h1>Home</h1>
-            <PostList posts={posts} />
+            <PostList posts={posts} heading='Featured'/>
         </div>
     );
 }
