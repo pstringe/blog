@@ -4,11 +4,16 @@ const Create = () => {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('');
-    
+    const submit = (e) => {
+        //prevent page refresh
+        e.preventDefault();
+        const post = {title, body, author};
+        console.log(post);
+    }
     return (
         <div className='create'>
             <h1>Create a new Post</h1>
-            <form>
+            <form onSubmit={(e)=>submit(e)}>
                 <label>Title</label>
                 <input  type='text' 
                         value={title} 
