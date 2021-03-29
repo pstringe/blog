@@ -1,22 +1,34 @@
+import {useState} from 'react';
+
 const Create = () => {
+    const [title, setTitle] = useState('');
+    const [body, setBody] = useState('');
+    const [author, setAuthor] = useState('');
+    
     return (
         <div className='create'>
             <h1>Create a new Post</h1>
             <form>
                 <label>Title</label>
-                <input type='text' required></input>
+                <input  type='text' 
+                        value={title} 
+                        onChange={(e)=>setTitle(e.target.value)}
+                        required>
+
+                </input>
                 <label>Body</label>
-                <textarea required>
+                <textarea value={body} onChange={(e)=>setBody(e.target.value)}required>
                     
                 </textarea>
                 <label>Author</label>
 
-                <select>
+                <select value={author} onChange={(e)=>setAuthor(e.target.value)}>
                     <option value='Poitier'>Poitier</option>
                     <option value='Mario'>Mario</option>
                 </select>
                 <button>Add Blog</button>
             </form>
+            <p className='preview'>{body}</p>
         </div>
     );
 }
