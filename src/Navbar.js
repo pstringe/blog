@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
+import {Typography} from '@material-ui/core';
 
-const Navbar = () => {
+const Navbar = (props) => {
     return ( 
         <nav className='navbar'>
-            <h1> Pstringe </h1>
+            <Typography color='textPrimary' variant='h5' component='h1'> {props.title} </Typography>
             <div className="links">
                 <Link to='/'>Home</Link>
                 <Link to='/create'>Create</Link>
