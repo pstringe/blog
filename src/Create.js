@@ -15,7 +15,7 @@ const Create = () => {
     return (
         <Container className='create'>
             <Typography component='h1' variant='h4'>Create a new Post</Typography>
-            <form onSubmit={(e)=>submit(e)}>
+            <Container component='form' onSubmit={(e)=>submit(e)}>
                 <Typography component='label'>Title</Typography>
                 <input  type='text' 
                         value={title} 
@@ -34,7 +34,7 @@ const Create = () => {
                     <option value='Mario'>Mario</option>
                 </select>
                 <Button color='secondary' variant='contained'>Create Post</Button>
-            </form>
+            </Container>
             <p className='preview'>{body}</p>
         </Container>
     );
