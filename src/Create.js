@@ -13,7 +13,7 @@ const Create = () => {
     }
     return (
         <div className='create'>
-            <Typography component='h1' variant='h3' color='textPrimary'>Create a new Post</Typography>
+            <Typography component='h1' variant='h4'>Create a new Post</Typography>
             <form onSubmit={(e)=>submit(e)}>
                 <Typography component='label'>Title</Typography>
                 <input  type='text' 
