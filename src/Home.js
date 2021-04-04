@@ -7,8 +7,8 @@ const Home = () => {
     return (
         <div className='home'>
             <Typography color='textPrimary' variant='h3' component='h1'>Home</Typography>
-            {error && <div>There was an error...</div>}
-            {isPending && <div className='loading'>Loading...</div>}
+            {error && <Typography color='textSecondary'>There was an error...</Typography>}
+            {isPending && <Typography color='textSecondary'>Loading...</Typography>}
             {posts && <PostList posts={posts} heading='Featured'/>}
         </div>
     );
