@@ -10,13 +10,9 @@ const PostList = ({heading, posts}) => {
                 <div className='post-preview' key={post.id}>
                     <Link to={`/posts/${post.id}`}>
                         <Typography component='h2' variant='h6' color='textSecondary'>{post?.title}</Typography>
-                        <div className='post-preview-author'>
-                            <Typography component='p' variant='subtitle2' gutterBottom>{post?.author}</Typography>
-                        </div>
                     </Link>
-                    <div className='post-preview-body'>
-                        <Typography component='p' variant='body1' paragraph noWrap>{post?.body}</Typography>
-                    </div>
+                    <Typography component='p' variant='subtitle2' gutterBottom>{post?.author}</Typography>
+                    <Typography component='p' variant='body1' paragraph noWrap>{post?.body}</Typography>
                 </div>
                 ): null;
             })}
