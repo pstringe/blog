@@ -45,16 +45,17 @@ a {
 .site_header {
   padding: 8px;
 }
-
+/*
 .links{
-  /*padding: 8px;*/
+  padding: 8px;
   display: flex;
   justify-content: space-around;
 }
+
 .links > a {
   margin: 8px;
 }
-
+*/
 .home, .create, .post-details{
   grid-column-start: 2;
   grid-column-end: 2;
