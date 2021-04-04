@@ -1,3 +1,4 @@
+import { Typography } from '@material-ui/core';
 import {useState} from 'react';
 
 const Create = () => {
@@ -12,20 +13,20 @@ const Create = () => {
     }
     return (
         <div className='create'>
-            <h1>Create a new Post</h1>
+            <Typography component='h1' variant='h3' color='textPrimary'>Create a new Post</Typography>
             <form onSubmit={(e)=>submit(e)}>
-                <label>Title</label>
+                <Typography component='label'>Title</Typography>
                 <input  type='text' 
                         value={title} 
                         onChange={(e)=>setTitle(e.target.value)}
                         required>
 
                 </input>
-                <label>Body</label>
+                <Typography component='label'>Body</Typography>
                 <textarea value={body} onChange={(e)=>setBody(e.target.value)}required>
                     
                 </textarea>
-                <label>Author</label>
+                <Typography component='label'>Author</Typography>
 
                 <select value={author} onChange={(e)=>setAuthor(e.target.value)}>
                     <option value='Poitier'>Poitier</option>
