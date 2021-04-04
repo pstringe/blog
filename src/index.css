@@ -55,7 +55,7 @@ a {
   margin: 8px;
 }
 
-.home, .create{
+.home, .create, .post-details{
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 2;
