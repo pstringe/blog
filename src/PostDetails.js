@@ -1,6 +1,6 @@
 import {useParams} from 'react-router-dom';
 import useFetch from './useFetch';
-
+import {Typography} from '@material-ui/core';
 const PostDetails = () => {
     const {id} = useParams();
     const {data : post, error, isPending } = useFetch('http://localhost:8000/posts/' + id);
@@ -10,9 +10,9 @@ const PostDetails = () => {
            {error && <div>{error}</div>}
            {(!isPending && !error && 
             <>
-                <h2>{post.title}</h2>
-                <p className='post-author'>{post.author}</p>
-                <p className='post-body'>{post.body}</p>
+                <Typography component='h2' variant='h4'>{post.title}</Typography>
+                <Typography component='p' variant='subtitle2' gutterBottom className='post-author'>{`By ${post.author}`}</Typography>
+                <Typography component='p' variant='body1'>{post.body}</Typography>
             </>
            )}
        </div> 
