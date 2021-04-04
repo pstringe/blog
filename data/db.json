@@ -2,19 +2,19 @@
     "posts": [
         {
             "title": "Title 1", 
-            "body": "post body", 
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, ante in viverra accumsan, urna sem congue velit, eget rutrum purus risus vel arcu. Morbi posuere dolor in lacus euismod, sit amet aliquam neque tincidunt. Vestibulum nec leo vel velit auctor lobortis eget pharetra ligula. Phasellus accumsan ullamcorper augue. Ut scelerisque diam eu nisi finibus dignissim. Vivamus ac elit sollicitudin, pellentesque nibh quis, sagittis odio. Aliquam nec iaculis dui.", 
             "author": "Poitier", 
             "id": 1
         },
         {
             "title": "Title 2",
-            "body": "post body",
+            "body": "Maecenas molestie eros massa, eget dictum risus pharetra non. Nunc cursus tempus suscipit. Fusce tempor id est facilisis bibendum. Vestibulum in sem accumsan, pharetra elit sed, sagittis odio. Integer in ultricies orci. Aliquam vitae enim sed justo porta dapibus id in quam. Phasellus nec neque ac velit interdum fringilla. Vestibulum efficitur accumsan vestibulum. Sed pharetra, eros ac vestibulum varius, est diam efficitur leo, quis dapibus enim elit sit amet risus. Integer dictum hendrerit pellentesque. Donec egestas placerat lacus. Nam dapibus augue neque, in lacinia odio cursus vitae. Maecenas eget sollicitudin sem.",
             "author": "Poitier",
             "id": 2
         },
         {
             "title": "Title 3",
-            "body": "post body",
+            "body": "Integer sed ullamcorper dui. Duis rutrum, lacus nec interdum accumsan, lectus ipsum maximus ante, eget mattis nisl risus vel justo. Donec pretium tellus a libero commodo, id finibus justo faucibus. Cras rhoncus nibh id sagittis imperdiet. Morbi convallis, felis vitae tempor convallis, metus quam finibus quam, quis egestas tellus sem vitae turpis. Nulla aliquam dictum lobortis. Mauris volutpat aliquam ultrices. Nam quam dolor, lobortis in commodo vitae, placerat vel odio. In sit amet cursus tellus. Duis neque erat, vestibulum non diam nec, gravida venenatis diam. Sed a nisi in elit iaculis fringilla eu ac sem. Morbi commodo purus eget ante commodo, eu dapibus neque vehicula.",
             "author": "Poitier",
             "id": 3
         }

@@ -15,7 +15,7 @@ const PostList = ({heading, posts}) => {
                         </div>
                     </Link>
                     <div className='post-preview-body'>
-                        <Typography component='p' variant='body1' paragraph>{post?.body}</Typography>
+                        <Typography component='p' variant='body1' paragraph noWrap>{post?.body}</Typography>
                     </div>
                 </div>
                 ): null;
