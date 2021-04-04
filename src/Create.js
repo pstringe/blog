@@ -1,4 +1,4 @@
-import { Container, Typography } from '@material-ui/core';
+import { Container, Typography, Button } from '@material-ui/core';
 import {useState} from 'react';
 
 const Create = () => {
@@ -33,7 +33,7 @@ const Create = () => {
                     <option value='Poitier'>Poitier</option>
                     <option value='Mario'>Mario</option>
                 </select>
-                <button>Add Blog</button>
+                <Button color='secondary' variant='contained'>Create Post</Button>
             </form>
             <p className='preview'>{body}</p>
         </Container>
