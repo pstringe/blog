@@ -4,7 +4,8 @@ import {Typography, Container} from '@material-ui/core';
 const PostList = ({heading, posts}) => {
     return posts ? ( 
         <Container className='post-list'>
-            <h2>{heading}</h2>
+            <Typography component='h2' variant='h5'>{heading}</Typography>
+            <hr/>
             {posts.map(post => {
                 return post ? (
                 <div className='post-preview' key={post.id}>
