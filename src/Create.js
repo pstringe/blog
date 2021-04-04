@@ -1,18 +1,19 @@
-import { Typography } from '@material-ui/core';
+import { Container, Typography } from '@material-ui/core';
 import {useState} from 'react';
 
 const Create = () => {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('');
+
     const submit = (e) => {
-        //prevent page refresh
         e.preventDefault();
         const post = {title, body, author};
         console.log(post);
     }
+    
     return (
-        <div className='create'>
+        <Container className='create'>
             <Typography component='h1' variant='h4'>Create a new Post</Typography>
             <form onSubmit={(e)=>submit(e)}>
                 <Typography component='label'>Title</Typography>
@@ -35,7 +36,7 @@ const Create = () => {
                 <button>Add Blog</button>
             </form>
             <p className='preview'>{body}</p>
-        </div>
+        </Container>
     );
 }
  

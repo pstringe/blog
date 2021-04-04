@@ -1,9 +1,9 @@
 import {Link} from 'react-router-dom';
-import {Typography} from '@material-ui/core';
+import {Typography, Container} from '@material-ui/core';
 
 const PostList = ({heading, posts}) => {
     return posts ? ( 
-        <div className='post-list'>
+        <Container className='post-list'>
             <h2>{heading}</h2>
             {posts.map(post => {
                 return post ? (
@@ -16,7 +16,7 @@ const PostList = ({heading, posts}) => {
                 </div>
                 ): null;
             })}
-        </div>
+        </Container>
      ) : null;
 }
  
